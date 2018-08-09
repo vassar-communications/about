@@ -47,6 +47,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/nav.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/nav.html",
+		"oF": 0
+		},
 	"\/assets\/sass\/_config.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -107,7 +114,8 @@
 		"uL": 1
 		},
 	"\/config.rb": {
-		"ft": 131072,
+		"cB": 0,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
