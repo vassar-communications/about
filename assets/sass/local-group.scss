@@ -4,7 +4,7 @@
 
 .vassar_plaid {
 	background-size: cover;
-	background: #ebe9e8 url(/assets/images/about-mission-bg.png) repeat;
+	background: #ebe9e8 url(../images/about-mission-bg.png) repeat;
 }
 
 .vassar_stars {
@@ -121,14 +121,14 @@
 	}
 }
 .u-lHeader {
-    background: #FFF url(/assets/images/about-header-bg.jpg) no-repeat top;
+    background: #FFF url(../images/about-header-bg.jpg) no-repeat top;
 	background-size: cover;
 }
 .Module__fullWidthMission {
     @extend .vassar_plaid;
 }
 .Module__fullWidthHistory {
-	background: #675a46 url(/assets/images/about-history-bg.jpg) no-repeat center center;
+	background: #675a46 url(../images/about-history-bg.jpg) no-repeat center center;
 	background-size: cover;
 	color: #fff;
 }
