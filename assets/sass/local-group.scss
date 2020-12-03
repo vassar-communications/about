@@ -1,12 +1,5 @@
-.History {
-	background-image: url(../images/about-history-bg.jpg);
-	min-height: 52rem;
-	padding: 4%;
-    .Row {
-      margin-bottom: auto;
-    }
-}
-.u-lHeader {
-	background-image: url(../images/about-header-bg.jpg);
-	background-position-y: bottom;
-}
+.History{background-image:url(../images/about-history-bg.jpg);padding-bottom:1em !important}
+
+@media screen and (min-width: 56.25em){.History{min-height:60rem}}.History .Row__title{padding-bottom:60%}
+
+.u-lHeader{background-image:url(../images/about-header-bg-2.jpg);background-position-y:bottom}
