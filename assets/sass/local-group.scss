@@ -74,7 +74,7 @@
 @media screen {
 	.Module__fullWidthHistory {
 		.Module__desc {
-			padding-top: 50%;
+			padding-top: 50% !important;
 		}
 	}
 	.Module__fullWidthFacts {
@@ -108,6 +108,12 @@
 			text-align: left;
 		}
 	}
+    .Module__fullWidthDiversity,
+    .Module__fullWidthMission {
+        .Module__list {
+            margin: 4% auto 0 !important;
+        }
+    }
 }
 .Module__fullWidthFacts {
 	.Module__subList {
@@ -125,7 +131,9 @@
 	background-size: cover;
 }
 .Module__fullWidthMission {
-    @extend .vassar_plaid;
+    border: 1px solid #f9f0f3;
+    background-image: url(../../assets/images/Vassar_SparkPattern_maroon-white.png);
+    background-repeat: no-repeat;
 }
 .Module__fullWidthHistory {
 	background: #675a46 url(../images/about-history-bg.jpg) no-repeat center center;
@@ -133,5 +141,27 @@
 	color: #fff;
 }
 .Module__fullWidthDiversity {
-    @extend .vassar_stars;
+    background: #d4cfce url(../../assets/images/Vassar_QuadGrid-grey.png) repeat;
+    background-size: 9em;
+    ul { text-align: left;}
+    ul ul { text-align: center;}
+    border: 1px solid #ececec;
+}
+.Module__fullWidthAcademic-responsibility-respect {
+    background:#333 url(../../assets/images/0460_Vassar-College_exteriors-+-campus-life_Oct-2019_JA.jpg) no-repeat center;
+    background-size:cover;
+    color: #fff;
+    .Module__desc {
+        padding-top: 33% !important;
+    }
+}
+@media all and (min-width: 45.3em){
+    .Module__fullWidthAcademic-responsibility-respect .Module__title {
+        width: 12em;
+        margin: 0 auto;
+    }
+}
+/* Jeff Mac this needs to be fixed centrally */
+.u-lContent, .u-lAside {
+    padding: 0;
 }
