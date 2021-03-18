@@ -1,5 +1,196 @@
-.History{background-image:url(../images/about-history-bg.jpg);padding-bottom:1em !important}
+@import "_config";
 
-@media screen and (min-width: 56.25em){.History{min-height:60rem}}.History .Row__title{padding-bottom:60%}
+/* global */
 
-.u-lHeader{background-image:url(../images/about-header-bg-2.jpg);background-position-y:bottom}
+.title-gradient {
+    color: $burgundy-2;
+    text-transform: none;
+    background: linear-gradient(135deg, $burgundy-2 0%, $burgundy-bright 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.u-Masthead__head {
+    font-family: $serif;
+    font-weight: $fontWeightRegular;
+    font-size: 2.5em;
+    text-transform: none;
+    letter-spacing: 0;
+}
+@media screen and (min-width: 37.5em) {
+    .u-Masthead__head {
+        font-size: 4.5em;
+    }
+}
+.u-Masthead__siteName--link {
+    padding-bottom: .5em;
+}
+.secondLevelNavSplit .modulesArea__row [id] {
+   margin-top: -4em;
+   padding-top: 4em !important;
+}
+.u-lContent {
+    font-weight: $fontWeightRegular;
+	font-size:0.95em;
+    a {
+        &:focus,
+        &:hover,
+        &:visited:focus,
+        &:visited:hover {
+            background-color:#D0D0CE;
+            color:#63666A
+        }
+    }
+}
+.Row__title {
+    font-size: 2.5em !important;
+    border: none;
+    padding: .75em 0 .15em;
+    font-family: $serif;
+    font-weight: $fontWeightBold;
+    @extend .title-gradient;
+    text-decoration:none !important;
+}
+.u-lHeader {
+	background-image:url(../images/about-header-bg-2.jpg);
+	background-position-y:top;
+}
+.bgSparkPatternMaroonWhite {
+    border: 1px solid $gray-light;
+    background-image: url(../../assets/images/Vassar_SparkPattern_maroon-white.png);
+    background-repeat: no-repeat;   
+}
+.bgQuadGrid-grey {
+    background: #d4cfce url(../../assets/images/Vassar_QuadGrid-grey.png) repeat;
+    background-size: 9em;
+    border: 1px solid $gray-light;
+}
+h3.u-ExtendedFooter__listHeader {
+    color: #fff;
+    margin-top: 0;
+    font: normal 600 1.5em/1.1 freight-big-pro,serif;
+    letter-spacing: normal;
+    text-transform: none;
+}
+.u-VCard--site .org {
+    font: $fontWeightBold 2em/1.1 $serif;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+
+/* local */
+
+.Facts {
+    .Row__title {
+        font-size: 3em;
+        border: none;
+        padding: .75em 0 .15em;
+        font-family: $serif;
+        font-weight: $fontWeightBold;
+        @extend .title-gradient;
+        text-decoration:none !important;
+    }
+    dd.Module__desc {
+        font-weight: $fontWeightBold;
+    }
+}
+.RowContainer.Facts {
+    margin-bottom: 2em;
+    .Module__title {
+        font-family: $sans-serif;
+        font-size: .8em !important;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        font-weight: $fontWeightBold;
+    }
+}
+@media screen {
+	.History {
+		min-height: 29em;
+        .Row {
+            margin-top: auto;
+        }
+        .Row__title {
+            color: #fff;
+        }
+    }
+}
+@media screen and (min-width: $tiny) {
+    .u-lHeader {
+        margin-bottom: 2em;
+    }
+}
+@media screen and (min-width: $medium) {
+}
+.History {
+	background-image:url(../images/about-history-bg.jpg);
+    background-position-x: 15%;
+    background-position-y: top;	
+    padding-bottom:1em !important;
+}
+.AcademicResponsibilityRespectPersons {
+    padding: 1em 5%;
+    min-height: 29em;
+    .Row__title {
+        color: #fff;
+        margin-bottom: 20%;
+    }
+    background: $gray-dark url(../../assets/images/0460_Vassar-College_exteriors-+-campus-life_Oct-2019_JA.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* Jeff Mac added temporarily from Academic sass repo, needs to be added centrally 
+ .u-pageHome body:not(.parent-site) .u-Masthead__siteName--link>*{
+	background-color:transparent;
+	-webkit-backdrop-filter:blur(0px) grayscale(0%);
+	backdrop-filter:blur(0px) grayscale(0%);
+	margin:0;
+	padding:0
+}
+.NavSite .u-NavSite__level.u-NavSite__level--1{
+	border-top:solid .075em #fff;
+	padding-top:1em !important;
+	margin-top:0;
+	max-width:64em;
+	margin:0 auto;
+	border-bottom:1px solid #ddd;
+	margin-bottom:0.7em;
+	padding-bottom:0.7em
+}
+.u-pageInner body:not(.parent-site) .u-Masthead,.u-thirdLevel .u-Masthead{
+	display:none
+}
+.u-pageInner body:not(.parent-site) .u-lHeader{
+	padding:1.75em 5% !important
+}
+.Module__title,main.u-lMain .Row__title,.parent-site .row-title{
+	text-align:left
+}
+
+.u-lContent .Dark a:focus,
+.u-lContent .Dark a:hover,
+.u-lContent .Dark a:visited,
+.u-lContent .Dark a:visited:focus,
+.u-lContent .Dark a:visited:hover,
+.u-lContent .Dark--scrim a:focus,
+.u-lContent .Dark--scrim a:hover,
+.u-lContent .Dark--scrim a:visited,
+.u-lContent .Dark--scrim a:visited:focus,
+.u-lContent .Dark--scrim a:visited:hover,
+.u-lContent .Dark--bgScrim a:focus,
+.u-lContent .Dark--bgScrim a:hover,
+.u-lContent .Dark--bgScrim a:visited,
+.u-lContent .Dark--bgScrim a:visited:focus,
+.u-lContent .Dark--bgScrim a:visited:hover,
+.u-lContent .galleria-desc-container a:focus,
+.u-lContent .galleria-desc-container a:hover,
+.u-lContent .galleria-desc-container a:visited,
+.u-lContent .galleria-desc-container a:visited:focus,
+.u-lContent .galleria-desc-container a:visited:hover{
+	color:#a2a6ad;
+	text-decoration-color:#a2a6ad;
+	background-color:#D0D0CE
+}
+.u-lFooter a:hover,.u-lFooter a:focus{
+	background-color:#D0D0CE;
+	color:#63666A
+}*/
