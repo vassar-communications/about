@@ -22,6 +22,9 @@
 }
 .RowContainer.Facts {
     margin-bottom: 2em;
+    .Row__title {
+        text-align: center;
+    }
     .Module__title {
         font-family: $sans-serif;
         font-size: .8em !important;
@@ -49,8 +52,11 @@
     background-position-y: top;	
     padding-bottom:1em !important;
 }
+.RowContainer.AcademicResponsibilityRespectPersons {
+    margin-top: 3em !important;
+}
 .AcademicResponsibilityRespectPersons {
-    padding: 1em 5%;
+    padding: 2em 5%;
     min-height: 29em;
     .Row__title {
         color: #fff;
