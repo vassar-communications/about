@@ -36,6 +36,7 @@
 @media screen {
 	.History {
 		min-height: 29em;
+        margin-bottom: 2em;
         .Row {
             margin-top: auto;
         }
@@ -65,60 +66,3 @@
     background: $gray-dark url(../../assets/images/0460_Vassar-College_exteriors-+-campus-life_Oct-2019_JA.jpg) no-repeat center;
     background-size: cover;
 }
-
-/* Jeff Mac added temporarily from Academic sass repo, needs to be added centrally 
- .u-pageHome body:not(.parent-site) .u-Masthead__siteName--link>*{
-	background-color:transparent;
-	-webkit-backdrop-filter:blur(0px) grayscale(0%);
-	backdrop-filter:blur(0px) grayscale(0%);
-	margin:0;
-	padding:0
-}
-.NavSite .u-NavSite__level.u-NavSite__level--1{
-	border-top:solid .075em #fff;
-	padding-top:1em !important;
-	margin-top:0;
-	max-width:64em;
-	margin:0 auto;
-	border-bottom:1px solid #ddd;
-	margin-bottom:0.7em;
-	padding-bottom:0.7em
-}
-.u-pageInner body:not(.parent-site) .u-Masthead,.u-thirdLevel .u-Masthead{
-	display:none
-}
-.u-pageInner body:not(.parent-site) .u-lHeader{
-	padding:1.75em 5% !important
-}
-.Module__title,main.u-lMain .Row__title,.parent-site .row-title{
-	text-align:left
-}
-
-.u-lContent .Dark a:focus,
-.u-lContent .Dark a:hover,
-.u-lContent .Dark a:visited,
-.u-lContent .Dark a:visited:focus,
-.u-lContent .Dark a:visited:hover,
-.u-lContent .Dark--scrim a:focus,
-.u-lContent .Dark--scrim a:hover,
-.u-lContent .Dark--scrim a:visited,
-.u-lContent .Dark--scrim a:visited:focus,
-.u-lContent .Dark--scrim a:visited:hover,
-.u-lContent .Dark--bgScrim a:focus,
-.u-lContent .Dark--bgScrim a:hover,
-.u-lContent .Dark--bgScrim a:visited,
-.u-lContent .Dark--bgScrim a:visited:focus,
-.u-lContent .Dark--bgScrim a:visited:hover,
-.u-lContent .galleria-desc-container a:focus,
-.u-lContent .galleria-desc-container a:hover,
-.u-lContent .galleria-desc-container a:visited,
-.u-lContent .galleria-desc-container a:visited:focus,
-.u-lContent .galleria-desc-container a:visited:hover{
-	color:#a2a6ad;
-	text-decoration-color:#a2a6ad;
-	background-color:#D0D0CE
-}
-.u-lFooter a:hover,.u-lFooter a:focus{
-	background-color:#D0D0CE;
-	color:#63666A
-}*/

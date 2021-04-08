@@ -6,7 +6,7 @@ $iconFont: "icons" !important;
 $sans-serif: "Source Sans Variable", sans-serif;
 /* typekit $sans-serif: source-sans-pro, sans-serif; */
 $serif: freight-big-pro, serif;
-$fontWeightLight: 325;
+$fontWeightLight: 340;
 $fontWeightRegular: 400;
 $fontWeightMedium: 600;
 $fontWeightBold: 600;
@@ -100,6 +100,13 @@ $u-ArticleList__systemMessage--color: #400;
         font-weight: $fontWeightLight !important;
     }
 }
+.PageNavContainer .Row {
+    background: #fff;
+    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.2);
+}
+.PageNav {
+    border: none;
+}
 @media screen and (min-width: $tiny) {
     .u-lHeader {
         margin-bottom: 2em;
@@ -184,4 +191,31 @@ h3.u-ExtendedFooter__listHeader {
     font: $fontWeightBold 2em/1.1 $serif;
     text-transform: capitalize;
     letter-spacing: 0;
+}
+.u-lContent .Dark a:visited,
+.u-lContent .Dark--scrim a:visited,
+.u-lContent .Dark--bgScrim a:visited,
+.u-lContent .galleria-desc-container a:visited {
+	color:#a2a6ad !important;
+	text-decoration-color:#a2a6ad !important;
+}
+.u-lContent .Dark a:focus,
+.u-lContent .Dark a:hover,
+.u-lContent .Dark a:visited:focus,
+.u-lContent .Dark a:visited:hover,
+.u-lContent .Dark--scrim a:focus,
+.u-lContent .Dark--scrim a:hover,
+.u-lContent .Dark--scrim a:visited:focus,
+.u-lContent .Dark--scrim a:visited:hover,
+.u-lContent .Dark--bgScrim a:focus,
+.u-lContent .Dark--bgScrim a:hover,
+.u-lContent .Dark--bgScrim a:visited:focus,
+.u-lContent .Dark--bgScrim a:visited:hover,
+.u-lContent .galleria-desc-container a:focus,
+.u-lContent .galleria-desc-container a:hover,
+.u-lContent .galleria-desc-container a:visited:focus,
+.u-lContent .galleria-desc-container a:visited:hover{
+	color:#a2a6ad;
+	text-decoration-color:#a2a6ad;
+	background-color:#D0D0CE
 }
