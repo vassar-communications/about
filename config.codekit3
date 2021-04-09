@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "5DEF8A35-E8C9-4CE2-BEBA-634DD340866D"
+      "uuidString" : "132C3401-C5ED-464A-8BB6-CFA2ECF23677"
     }
   ],
   "creatorBuild" : "34081",
@@ -45,31 +45,25 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/css\/_config.css",
+      "oAP" : "\/assets\/sass\/_config.css",
       "oF" : 0,
-      "oS" : 3,
+      "oS" : 0,
       "pg" : 0,
-      "sct" : 1
+      "sct" : 0
     },
     "\/assets\/sass\/local-group.scss" : {
       "aP" : 1,
       "bl" : 1,
       "dP" : 10,
-      "ec" : 1,
+      "ec" : 0,
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/css\/local-group.css",
-      "oF" : 0,
+      "oF" : 2,
       "oS" : 3,
       "pg" : 0,
       "sct" : 1
-    },
-    "\/config.rb" : {
-      "ft" : 131072,
-      "oA" : 0,
-      "oAP" : "\/config.rb",
-      "oF" : 0
     }
   },
   "hooks" : [
@@ -79,10 +73,10 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 545948213,
-    "displayValue" : "vassar\/about",
-    "displayValueWasSetByUser" : 1,
-    "iconImageName" : "meme-grumpy",
+    "creationDate" : 639677414.060179,
+    "displayValue" : "about",
+    "displayValueWasSetByUser" : 0,
+    "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
@@ -530,7 +524,7 @@
     "esLintRules" : {
       "accessor-pairs" : {
         "active" : 0,
-        "optionString" : "{'setWithoutGet': true, 'getWithoutSet': false}"
+        "optionString" : "{'setWithoutGet': true, 'getWithoutSet': false, 'enforceForClassMembers': true}"
       },
       "array-bracket-newline" : {
         "active" : 0,
@@ -577,7 +571,7 @@
       },
       "camelcase" : {
         "active" : 0,
-        "optionString" : "{'properties': 'always'}"
+        "optionString" : "{'properties': 'always', 'ignoreDestructuring': false, 'ignoreImports': false}"
       },
       "capitalized-comments" : {
         "active" : 0,
@@ -605,7 +599,7 @@
       },
       "computed-property-spacing" : {
         "active" : 0,
-        "optionString" : "'never'"
+        "optionString" : "'never', {'enforceForClassMembers': true}"
       },
       "consistent-return" : {
         "active" : 0,
@@ -656,11 +650,11 @@
       },
       "func-name-matching" : {
         "active" : 0,
-        "optionString" : "'always', {'includeCommonJSModuleExports': false}"
+        "optionString" : "'always', {'considerPropertyDescriptor': false, 'includeCommonJSModuleExports': false}"
       },
       "func-names" : {
         "active" : 0,
-        "optionString" : "'always'"
+        "optionString" : "'always', {'generators': 'always'}"
       },
       "func-style" : {
         "active" : 0,
@@ -702,7 +696,7 @@
       },
       "id-match" : {
         "active" : 0,
-        "optionString" : "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+        "optionString" : "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true, 'ignoreDestructuring': false}"
       },
       "implicit-arrow-linebreak" : {
         "active" : 0,
@@ -794,7 +788,7 @@
       },
       "new-parens" : {
         "active" : 0,
-        "optionString" : ""
+        "optionString" : "'always'"
       },
       "newline-per-chained-call" : {
         "active" : 0,
@@ -837,7 +831,7 @@
       },
       "no-confusing-arrow" : {
         "active" : 0,
-        "optionString" : "{'allowParens': false}"
+        "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
         "active" : 1,
@@ -926,7 +920,7 @@
       },
       "no-extra-parens" : {
         "active" : 0,
-        "optionString" : "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+        "optionString" : "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false, 'enforceForSequenceExpressions': false, 'enforceForNewInMemberExpressions': false}"
       },
       "no-extra-semi" : {
         "active" : 1
@@ -970,7 +964,7 @@
       },
       "no-invalid-this" : {
         "active" : 0,
-        "optionString" : ""
+        "optionString" : "{'capIsConstructor': true}"
       },
       "no-irregular-whitespace" : {
         "active" : 1,
@@ -1000,7 +994,7 @@
       },
       "no-magic-numbers" : {
         "active" : 0,
-        "optionString" : "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+        "optionString" : "{'ignore': [], 'ignoreArrayIndexes': true, 'ignoreDefaultValues': false, 'enforceConst': false, 'detectObjects': false}"
       },
       "no-misleading-character-class" : {
         "active" : 0
@@ -1135,7 +1129,7 @@
       },
       "no-self-assign" : {
         "active" : 1,
-        "optionString" : "{'props': false}"
+        "optionString" : "{'props': true}"
       },
       "no-self-compare" : {
         "active" : 0
@@ -1162,7 +1156,7 @@
       },
       "no-tabs" : {
         "active" : 0,
-        "optionString" : ""
+        "optionString" : "{allowIndentationTabs: false}"
       },
       "no-template-curly-in-string" : {
         "active" : 0
@@ -1192,7 +1186,7 @@
       },
       "no-underscore-dangle" : {
         "active" : 0,
-        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false, 'allowFunctionParams': true}"
       },
       "no-unexpected-multiline" : {
         "active" : 1
@@ -1216,7 +1210,7 @@
       },
       "no-unsafe-negation" : {
         "active" : 1,
-        "optionString" : ""
+        "optionString" : "{'enforceForOrderingRelations': false}"
       },
       "no-unsafe-optional-chaining" : {
         "active" : 0,
@@ -1224,7 +1218,7 @@
       },
       "no-unused-expressions" : {
         "active" : 0,
-        "optionString" : "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+        "optionString" : "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false, 'enforceForJSX': false}"
       },
       "no-unused-labels" : {
         "active" : 1
@@ -1248,7 +1242,7 @@
       },
       "no-useless-computed-key" : {
         "active" : 0,
-        "optionString" : ""
+        "optionString" : "{'enforceForClassMembers': false}"
       },
       "no-useless-concat" : {
         "active" : 0
@@ -1271,7 +1265,7 @@
       },
       "no-void" : {
         "active" : 0,
-        "optionString" : ""
+        "optionString" : "{'allowAsStatement': false}"
       },
       "no-warning-comments" : {
         "active" : 0,
@@ -1289,7 +1283,7 @@
       },
       "object-curly-newline" : {
         "active" : 0,
-        "optionString" : "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+        "optionString" : "{'ObjectExpression': {'multiline': true, 'consistent': true}, 'ObjectPattern': {'multiline': true, 'consistent': true}}"
       },
       "object-curly-spacing" : {
         "active" : 0,
@@ -1412,11 +1406,11 @@
       },
       "sort-imports" : {
         "active" : 0,
-        "optionString" : "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+        "optionString" : "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single'], 'allowSeparatedGroups': false}"
       },
       "sort-keys" : {
         "active" : 0,
-        "optionString" : "'asc', {'caseSensitive': true, 'natural': false}"
+        "optionString" : "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
       },
       "sort-vars" : {
         "active" : 0,
@@ -1471,7 +1465,7 @@
       },
       "use-isnan" : {
         "active" : 1,
-        "optionString" : ""
+        "optionString" : "{'enforceForSwitchCase': true, 'enforceForIndexOf': false}"
       },
       "valid-jsdoc" : {
         "active" : 0,
@@ -1860,7 +1854,7 @@
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
-      "minifierStyle" : 1,
+      "minifierStyle" : 0,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
       "syntaxCheckerStyle" : 1,
@@ -1924,11 +1918,11 @@
       "autoOutputPathRelativePath" : "\/min",
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
-      "autoOutputPathStyle" : 2,
+      "autoOutputPathStyle" : 0,
       "bundleFormat" : 0,
       "minifierStyle" : 1,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 3,
       "transpilerStyle" : 0
     },
     "languageDefaultsJSON" : {
@@ -1938,7 +1932,7 @@
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
-      "orderOutput" : 0,
+      "orderOutput" : 1,
       "outputStyle" : 1
     },
     "languageDefaultsKIT" : {
@@ -1958,7 +1952,7 @@
       "autoOutputPathRelativePath" : "..\/css",
       "autoOutputPathReplace1" : "less",
       "autoOutputPathReplace2" : "css",
-      "autoOutputPathStyle" : 2,
+      "autoOutputPathStyle" : 0,
       "cssoStyle" : 0,
       "enableJavascript" : 0,
       "mathStyle" : 0,
@@ -1967,7 +1961,7 @@
       "rewriteURLStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
-      "sourceMapStyle" : 1,
+      "sourceMapStyle" : 0,
       "strictImports" : 0,
       "strictUnits" : 0
     },
@@ -2023,7 +2017,7 @@
       "autoOutputPathStyle" : 0,
       "compileDebug" : 1,
       "htmlMinifierStyle" : 0,
-      "outputStyle" : 0,
+      "outputStyle" : 1,
       "shouldRunCacheBuster" : 0
     },
     "languageDefaultsSASS" : {
@@ -2032,12 +2026,12 @@
       "autoOutputPathRelativePath" : "..\/css",
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
-      "autoOutputPathStyle" : 2,
-      "compilerType" : 1,
+      "autoOutputPathStyle" : 0,
+      "compilerType" : 0,
       "cssoStyle" : 0,
       "decimalPrecision" : 10,
       "emitCharset" : 1,
-      "outputStyle" : 3,
+      "outputStyle" : 0,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
@@ -2064,7 +2058,7 @@
       "autoOutputPathRelativePath" : "..\/css",
       "autoOutputPathReplace1" : "stylus",
       "autoOutputPathReplace2" : "css",
-      "autoOutputPathStyle" : 2,
+      "autoOutputPathStyle" : 0,
       "cssoStyle" : 0,
       "debugStyle" : 0,
       "importCSS" : 0,
@@ -2082,7 +2076,7 @@
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
-      "pluginMask" : 3758088159
+      "pluginMask" : 52780316221407
     },
     "languageDefaultsTS" : {
       "autoOutputAction" : 0,
@@ -2090,7 +2084,7 @@
       "autoOutputPathRelativePath" : "\/js",
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
-      "autoOutputPathStyle" : 2,
+      "autoOutputPathStyle" : 0,
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
@@ -2232,7 +2226,7 @@
         "flagValue" : -1
       },
       "dead_code" : {
-        "active" : 0,
+        "active" : 1,
         "flagValue" : -1
       },
       "directives" : {
@@ -2264,7 +2258,7 @@
         "flagValue" : -1
       },
       "hoist_funs" : {
-        "active" : 1,
+        "active" : 0,
         "flagValue" : -1
       },
       "hoist_props" : {
@@ -2308,7 +2302,7 @@
         "flagValue" : -1
       },
       "keep_fargs" : {
-        "active" : 0,
+        "active" : 1,
         "flagValue" : -1
       },
       "keep_fnames" : {
@@ -2436,7 +2430,7 @@
         "flagValue" : -1
       },
       "unused" : {
-        "active" : 0,
+        "active" : 1,
         "flagValue" : -1
       },
       "warnings" : {
@@ -2453,7 +2447,7 @@
       }
     },
     "uglifyMangleNames" : 1,
-    "uglifyReservedNamesString" : "$",
+    "uglifyReservedNamesString" : "$,exports,require",
     "webpPresets" : {
 
     },
